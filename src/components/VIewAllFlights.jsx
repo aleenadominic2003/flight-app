@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 
 
@@ -23,7 +24,7 @@ import React, { useEffect, useState } from 'react'
   return (
     <div>
 
-  
+    <NavigationBar />
       <h1><center>View All Flightss</center></h1>
       <div className="container">
         <div className="row">

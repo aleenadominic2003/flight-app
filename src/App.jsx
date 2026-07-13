@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddFlight from './components/AddFlight'
+import ViewAllFlights from './components/VIewAllFlights'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
 
           
          <Route path='/' element={<AddFlight/>} />
+         <Route path='/view' element={<ViewAllFlights/>} />
          
 
         </Routes>

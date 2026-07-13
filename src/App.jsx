@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AddFlight from './components/AddFlight'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,8 +16,8 @@ function App() {
         <Routes>
 
           
-          <Route path='/' element={<AddFlight/>} />
-          <Route path='/view' element={<ViewAllFlights/>} />
+         <Route path='/' element={<AddFlight/>} />
+         
 
         </Routes>
       

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import NavigationBar from './NavigationBar'
 
 const AddFlight = () => {
 
@@ -27,7 +28,7 @@ const AddFlight = () => {
   }
 
   const readValue = () => {
-    axios.post("POST https://host-demo-app.onrender.com/api/add-flight Content-Type: application/json", input)
+    axios.post("https://host-demo-app.onrender.com/api/add-flight", input)
       .then((response) => {
         alert("Flight added successfully")
 
@@ -56,7 +57,7 @@ const AddFlight = () => {
 
   return (
     <div>
-
+      <NavigationBar />
       <div className="container mt-4">
         <div className="row">
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
